@@ -12,6 +12,7 @@ import qualified Example.Monad.ToSMTLib
 import qualified Example.Monad.Tuple
 import qualified Example.Monad.ParserInterface
 import qualified Example.Monad.IntList
+import qualified Example.Monad.FloatingPoint
 
 import System.Environment
 
@@ -48,6 +49,9 @@ examples =
     )
   , ("intList"
     , Example.Monad.IntList.run
+    )
+  , ("floatingPoint"
+    , Example.Monad.FloatingPoint.run
     )
   ]
 
