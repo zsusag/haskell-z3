@@ -251,11 +251,11 @@ foreign import ccall unsafe "Z3_algebraic_roots"
 foreign import ccall unsafe "Z3_algebraic_eval"
     z3_algebraic_eval :: Ptr Z3_context -> Ptr Z3_ast -> CUInt -> Ptr (Ptr Z3_ast) -> IO CInt
 
-foreign import ccall unsafe "Z3_algebraic_get_poly"
-    z3_algebraic_get_poly :: Ptr Z3_context -> Ptr Z3_ast -> IO (Ptr Z3_ast_vector)
+-- foreign import ccall unsafe "Z3_algebraic_get_poly"
+--     z3_algebraic_get_poly :: Ptr Z3_context -> Ptr Z3_ast -> IO (Ptr Z3_ast_vector)
 
-foreign import ccall unsafe "Z3_algebraic_get_i"
-    z3_algebraic_get_i :: Ptr Z3_context -> Ptr Z3_ast -> IO CUInt
+-- foreign import ccall unsafe "Z3_algebraic_get_i"
+--     z3_algebraic_get_i :: Ptr Z3_context -> Ptr Z3_ast -> IO CUInt
 
 ---------------------------------------------------------------------
 -- * Global Parameters
@@ -1525,8 +1525,8 @@ foreign import ccall unsafe "Z3_to_func_decl"
 foreign import ccall unsafe "Z3_get_numeral_string"
     z3_get_numeral_string :: Ptr Z3_context -> Ptr Z3_ast -> IO Z3_string
 
-foreign import ccall unsafe "Z3_get_numeral_binary_string"
-  z3_get_numeral_binary_string :: Ptr Z3_context -> Ptr Z3_ast -> IO Z3_string
+-- foreign import ccall unsafe "Z3_get_numeral_binary_string"
+--   z3_get_numeral_binary_string :: Ptr Z3_context -> Ptr Z3_ast -> IO Z3_string
 
 foreign import ccall unsafe "Z3_get_numeral_decimal_string"
   z3_get_numeral_decimal_string :: Ptr Z3_context -> Ptr Z3_ast -> IO Z3_string
